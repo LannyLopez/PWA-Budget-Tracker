@@ -18,7 +18,7 @@ const APP_PREFIX = 'budget-tracker-';
      './manifest.json'
  ];
 
- self.addEventListener('intall', function (e) {
+ self.addEventListener('install', function (e) {
      e.waitUntil(
          caches.open(CACHE_NAME).then(function (cache) {
              console.log('installing cache : ' + CACHE_NAME)
